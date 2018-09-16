@@ -1,0 +1,9 @@
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\bin\Debug\BoxCommonLib.dll
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\bin\Debug\BoxCommonLib.pdb
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\obj\Debug\BoxCommonLib.csprojAssemblyReference.cache
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\obj\Debug\BoxCommonLib.csproj.CoreCompileInputs.cache
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\obj\Debug\BoxCommonLib.csproj.CopyComplete
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\obj\Debug\BoxCommonLib.dll
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\obj\Debug\BoxCommonLib.pdb
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\bin\Debug\System.Data.OracleClient.dll
+D:\4.SourceCode\4)Library\BoxCommonLib\BoxCommonLib\bin\Debug\System.ServiceModel.dll

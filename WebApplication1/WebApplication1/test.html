@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/jquery.canvasjs.min.js"></script>
+    <script>
+
+        //$(function () {
+
+
+        //});
+
+
+        window.onload = function () {
+            ajax();
+            setInterval(ajax, 3000);
+        }
+
+        var ajax = function () {
+            $.ajax({
+                url: "/Vote/api/vote/1",   //存取Json的網址
+                type: "GET",
+                cache: false,
+                dataType: 'json',
+                data: { id: "111", user: "frank" },
+                //contentType: "application/json",
+                success: function (data) {
+                    call(data);
+
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        }
+
+        var call = function (data) {
+            console.log(data);
+            //Better to construct options first and then pass it as a parameter
+            var options = {
+                title: {
+                    text: "The Result of Teacher Evaluation"
+                },
+                data: [
+                    {
+                        // Change type to "doughnut", "line", "splineArea", etc.
+                        type: "column",
+                        dataPoints: eval(data)
+
+                    }
+
+                ]
+            };
+
+            $("#chartContainer").CanvasJSChart(options);
+
+        }
+    </script>
+</head>
+<body>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <script src="../Scripts/angular/lib/ionic/js/ionic.bundle.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <link href="../Scripts/angular/lib/ionic/css/ionic.css" rel="stylesheet" />
+
+    <style type="text/css">
+
+        .platform-ios .manual-ios-statusbar-padding {
+            padding-top: 20px;
+        }
+
+        .manual-remove-top-padding {
+            padding-top: 0px;
+        }
+
+            .manual-remove-top-padding .scroll {
+                padding-top: 0px !important;
+            }
+
+        ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+            ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+                border-radius: 0px;
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+        .show-list-numbers-and-dots ul {
+            list-style-type: disc;
+            padding-left: 40px;
+        }
+
+        .show-list-numbers-and-dots ol {
+            list-style-type: decimal;
+            padding-left: 40px;
+        }
+    </style>
+    <script src="../Scripts/angular/js/app.js"></script>
+    <script src="../Scripts/angular/js/controllers.js"></script>
+    <script src="../Scripts/angular/js/routes.js"></script>
+
+    <script src="../Scripts/angular/js/directives.js"></script>
+    <script src="../Scripts/angular/js/services.js"></script>
+    <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+</head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-view title="首頁" id="page2">
+          <ion-content padding="true" class="has-header">
+              <ion-list id="page2-list4">
+                  <ion-item class="item-thumbnail-left" id="page2-list-item10" ui-sref="tabsController.page7()">
+                      <img src="img/fTXLmWIvQ8mqso1bVJqp_TB2gCfLdpXXXXcwXpXXXXXXXXXX_50574632.jpg">
+                      <h2>華益百貨</h2>
+                  </ion-item>
+                  <ion-item class="item-thumbnail-left" id="page2-list-item11">
+                      <img src="img/SAwJEIc1Q4mDYvt6qHh4_DBAK09-A9007LXKH000_5811a06ad53dc.jpg">
+                      <h2>松貝百貨</h2>
+                  </ion-item>
+              </ion-list>
+          </ion-content>
+      </ion-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+      <ion-header-bar class="bar-stable">
+        <div class="title">Menu</div>
+      </ion-header-bar>
+      <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+        <a ui-sref="login()" menu-close="" id="menu-button4" class="button button-positive button-block" data-componentid="button4">登入</a>
+        <a ui-sref="signup()" menu-close="" id="menu-button5" class="button button-positive button-block" data-componentid="button5">註冊</a>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>
